@@ -1,9 +1,55 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:azure;
 }
 
 .main {
-    border: 2px solid black;
+  border: 2px solid black;
+  width: 250px;
+  padding: 30px;
+  background-color: beige;
+  border-radius: 6%;
+}
+
+.screen {
+  border: 2px solid brown;
+  width: auto;
+  height: 50px;
+  border-radius: 6%;
+}
+.operators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.operators > button {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: bisque;
+  border-radius: 12%;
+  font-size: 24px;
+}
+
+.clear-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.clear-delete > button {
+width: auto;
+height: 40px;
+background-color:azure;
+border-radius: 20%;
+font-size: 28px;
+}
+
+button:hover {
+    cursor: pointer;
 }
