@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   justify-content: center;
@@ -15,15 +16,8 @@ body {
   border-radius: 6%;
 }
 
-.screen {
-  border: 2px solid brown;
-  width: auto;
-  height: 50px;
-  border-radius: 5px;
-}
 
 .buttons {
-    /* margin: 0 auto; */
     padding: 10px;
 }
 .operators {
