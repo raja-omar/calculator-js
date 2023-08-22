@@ -30,6 +30,7 @@ operators.forEach(btn => {
         if (curr && prev) {
             evaluate()
         }
+        // shift the number and operator to old screen to make space for new value
         if (curr) {
             // change values
             prev = curr
@@ -82,6 +83,7 @@ const evaluate = () => {
     curr = curr.toString()
     newScreen.textContent = curr
     oldScreen.textContent = ''
+    prev =''
 
 }
 
@@ -109,8 +111,6 @@ const operate = () => {
             return divide(prev, curr)
     }
 }
-
-
 
 const add = function (a, b) {
     return a + b
