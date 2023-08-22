@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color:azure;
+  flex-shrink: 0;
 }
 
 .main {
@@ -18,19 +19,25 @@ body {
   border: 2px solid brown;
   width: auto;
   height: 50px;
-  border-radius: 6%;
+  border-radius: 5px;
+}
+
+.buttons {
+    /* margin: 0 auto; */
+    padding: 10px;
 }
 .operators {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 16px;
+  
 }
 .operators > button {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 50px;
   height: 50px;
   background-color: bisque;
-  border-radius: 12%;
   font-size: 24px;
 }
 
@@ -38,18 +45,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   gap: 10px;
 }
 
 .clear-delete > button {
 width: auto;
 height: 40px;
-background-color:azure;
-border-radius: 20%;
+background-color:burlywood;
 font-size: 28px;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+button {
+    border-radius: 8px;
+}
+
+#clear, #delete {
+    text-align: center;
 }
